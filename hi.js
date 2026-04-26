@@ -1,8 +1,10 @@
-let favicon = document.getElementById('favicon');
-let icons = ['favicon.png', 'favicon2.png'];
-let index = 0;
+window.onload = function () {
+    let faviconIndex = 0;
+    const favicon = document.getElementById('favicon');
+    const icons = ['favicon.png', 'favicon2.png']; // Array of icons
 
-setInterval(function() {
-  index = (index + 1) % icons.length;
-  favicon.href = icons[index];
-}, 2000);
+    setInterval(function() {
+        favicon.href = icons[faviconIndex];
+        faviconIndex = (faviconIndex + 1) % icons.length; // Cycle through array
+    }, 1000); // 1000ms = 1 second
+};
