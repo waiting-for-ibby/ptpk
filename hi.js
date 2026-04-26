@@ -7,4 +7,4 @@ document.addEventListener('DOMContentLoaded', function () {
         favicon.href = icons[faviconIndex];
         faviconIndex = (faviconIndex + 1) % icons.length; // Cycle through array
     }, 1000); // 1000ms = 1 second
-};
+});
